@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1504296944 source:c:\users\eugenia testamanti\desktop\tp1calculadora\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1504296945 c:\users\eugenia testamanti\desktop\tp1calculadora\tp1\funciones.h
+
