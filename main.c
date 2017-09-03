@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include "funciones.h"
 
-float A;
-float B;
 
 float sumar(float A,float B);
 float restar(float A,float B);
@@ -13,20 +11,24 @@ int factorial(int A);
 
 int main()
 {
+    float A;
+    float B;
+
     char seguir='s';
     int opcion=0;
 
     while(seguir=='s')
     {
-        printf("1- Ingresar 1er operando (A=x)\n");
-        printf("2- Ingresar 2do operando (B=y)\n");
+        printf("1- Ingresar 1er operando (A)\n");
+        printf("2- Ingresar 2do operando (B)\n");
         printf("3- Calcular la suma (A+B)\n");
         printf("4- Calcular la resta (A-B)\n");
         printf("5- Calcular la division (A/B)\n");
         printf("6- Calcular la multiplicacion (A*B)\n");
         printf("7- Calcular el factorial (A!)\n");
-        printf("8- Calcular todas las operacione\n");
+        printf("8- Calcular todas las operaciones\n");
         printf("9- Salir\n");
+
 
         scanf("%d",&opcion);
 
@@ -34,16 +36,14 @@ int main()
         {
             case 1:
                 {
-                printf("X= \n");
+                printf("A= \n");
                 scanf("%f",&A);
-                // printf("%f",A);
                 break;
                 }
             case 2:
                 {
-                printf("Y= \n");
+                printf("B= \n");
                 scanf("%f",&B);
-                // printf("%f",B);
                 break;
                 }
             case 3:
