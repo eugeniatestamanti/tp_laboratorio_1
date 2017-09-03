@@ -29,7 +29,6 @@ int main()
         printf("8- Calcular todas las operaciones\n");
         printf("9- Salir de la calculadora\n");
 
-
         scanf("%d",&opcion);
 
         switch(opcion)
@@ -102,8 +101,7 @@ int main()
                 break;
         }
     }
-
-    return 0;
+return 0;
 }
 
 /**
