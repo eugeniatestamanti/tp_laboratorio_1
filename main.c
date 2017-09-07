@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include <stdlib.h>
 #include "funciones.h"
 
@@ -7,7 +8,7 @@ float sumar(float A,float B);
 float restar(float A,float B);
 float dividir(float A,float B);
 float multiplicar(float A,float B);
-int factorial(int A);
+int factorial(int Afactorial);
 
 int main()
 {
@@ -60,7 +61,10 @@ int main()
             case 5:
                 {
                 float division=dividir(A,B);
-                printf("A/B=%f \n", division);
+                if(B!=0)
+                {
+                    printf("A/B=%f \n", division);
+                }
                 break;
                 }
             case 6:
@@ -71,8 +75,15 @@ int main()
                 }
             case 7:
                 {
-                int Afactorial = round(A);
-                int Elfactorial = factorial(Afactorial);
+                int Afactorial=round(A);
+                int i;
+                int acumulador=1;
+
+                for (i=Afactorial;i>0;i--)
+                {
+                    acumulador=acumulador*i;
+                }
+                int Elfactorial = factorial(acumulador);
                 printf("El factorial es: %d\n", Elfactorial);
                 break;
                 }
@@ -85,14 +96,25 @@ int main()
                 printf("A-B=%f \n", resta);
 
                 float division=dividir(A,B);
-                printf("A/B=%f \n", division);
+                 if(B!=0)
+                {
+                    printf("A/B=%f \n", division);
+                }
 
                 float multiplicacion=multiplicar(A,B);
                 printf("A*B=%f \n", multiplicacion);
 
-                int Afactorial = round(A);
-                int Elfactorial = factorial(Afactorial);
-                printf("A!: %d\n", Elfactorial);
+                int Afactorial=round(A);
+                int i;
+                int acumulador=1;
+
+                for (i=Afactorial;i>0;i--)
+                {
+                    acumulador=acumulador*i;
+                }
+                int Elfactorial = factorial(acumulador);
+                printf("El factorial es: %d\n", Elfactorial);
+                break;
 
                 break;
                 }
@@ -127,15 +149,22 @@ float restar(float A,float B)
 }
 
 /**
-* \brief Realiza la división de dos números flotantes A y B y devuelve el resultado.
+* \brief Realiza la división de dos números flotantes A y B, asegurandose que B no sea 0 y devuelve el resultado.
 * \param división. Es el resultado a mostrar.
 * \return La división entre A y B
 */
 
 float dividir(float A,float B)
 {
+    if(B==0)
+    {
+        printf("No existe la division por cero\n");
+    }
+
     return A/B;
+
 }
+
 
 /**
 * \brief Realiza la multiplicación de dos números flotantes A y B y devuelve el resultado.
@@ -162,5 +191,4 @@ int factorial(int Afactorial)
         return 1;
     }
 
-    return Afactorial * factorial(Afactorial-1);
 }

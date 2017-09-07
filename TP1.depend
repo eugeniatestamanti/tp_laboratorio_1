@@ -6,8 +6,9 @@
 
 1504296945 c:\users\eugenia testamanti\desktop\tp1calculadora\tp1\funciones.h
 
-1504471662 source:c:\users\eugenia testamanti\desktop\proyectotp1\main.c
+1504664862 source:c:\users\eugenia testamanti\desktop\proyectotp1\main.c
 	<stdio.h>
+	<math.h>
 	<stdlib.h>
 	"funciones.h"
 
