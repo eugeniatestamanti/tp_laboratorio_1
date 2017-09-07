@@ -75,11 +75,11 @@ int main()
                 }
             case 7:
                 {
-                int Afactorial=round(A);
+                int Aentero=round(A);
                 int i;
                 int acumulador=1;
 
-                for (i=Afactorial;i>0;i--)
+                for (i=Aentero;i>0;i--)
                 {
                     acumulador=acumulador*i;
                 }
@@ -104,13 +104,13 @@ int main()
                 float multiplicacion=multiplicar(A,B);
                 printf("A*B=%f \n", multiplicacion);
 
-                int Afactorial=round(A);
+                int Aentero=round(A);
                 int i;
                 int acumulador=1;
 
-                for (i=Afactorial;i>0;i--)
+                for (i=Aentero;i>0;i--)
                 {
-                    acumulador=acumulador*i;
+                   return acumulador=acumulador*i;
                 }
                 int Elfactorial = factorial(acumulador);
                 printf("El factorial es: %d\n", Elfactorial);
@@ -184,11 +184,12 @@ float multiplicar(float A,float B)
 * \return El factorial de A.
 */
 
-int factorial(int Afactorial)
+int factorial(int Aentero)
 {
-    if(Afactorial == 0)
+    if(Aentero == 0)
     {
         return 1;
     }
 
+    return Aentero;
 }
