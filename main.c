@@ -3,13 +3,6 @@
 #include "funciones.h"
 #include <math.h>
 
-
-float sumar(float A,float B);
-float restar(float A,float B);
-float dividir(float A,float B);
-float multiplicar(float A,float B);
-int factorial(int Afactorial);
-
 int main()
 {
     float A;
@@ -85,7 +78,7 @@ int main()
                     acumulador=acumulador*i;
                 }
                 int Elfactorial = factorial(acumulador);
-                printf("El factorial es: %d\n", Elfactorial);
+                printf("A!= %d \n", Elfactorial);
                 break;
                 }
             case 8:
@@ -111,11 +104,10 @@ int main()
 
                 for (i=Aentero;i>0;i--)
                 {
-                   return acumulador=acumulador*i;
+                    acumulador=acumulador*i;
                 }
                 int Elfactorial = factorial(acumulador);
-                printf("El factorial es: %d\n", Elfactorial);
-                break;
+                printf("A!= %d\n", Elfactorial);
 
                 break;
                 }
