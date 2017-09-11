@@ -108,9 +108,10 @@ int main()
                 }
                 int Elfactorial = factorial(acumulador);
                 printf("A!= %d\n", Elfactorial);
+                }
 
                 break;
-                }
+
             case 9:
                 seguir = 'n';
                 break;
