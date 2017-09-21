@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1505961442 source:c:\users\eugenia testamanti\downloads\tp_2_cascara\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"funciones.h"
+
+1505959650 c:\users\eugenia testamanti\downloads\tp_2_cascara\tp_2_cascara\funciones.h
+
+1505961373 source:c:\users\eugenia testamanti\downloads\tp_2_cascara\tp_2_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"funciones.h"
+
+1506001655 source:c:\users\eugenia testamanti\desktop\tp2\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"funciones.h"
+
+1505959650 c:\users\eugenia testamanti\desktop\tp2\tp_2_cascara\funciones.h
+
+1506005368 source:c:\users\eugenia testamanti\desktop\tp2\tp_2_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"funciones.h"
+
