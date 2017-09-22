@@ -88,16 +88,6 @@ void listarPersonas(EPersona datos[], int MAX)
 
 }
 
-/**En el eje Y(fila) se marcarán la cantidad de personas en el grupo, y en el eje X(columna) el grupo
-Ejemplo:
-*
-*            *
-*     *      *
-*     *      *
-*     *      *
-*     *      *
-<18 19-35 >35
-.*/
 void graficarPersonas(EPersona datos[], int MAX)
 {
     int i;

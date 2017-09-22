@@ -10,21 +10,33 @@ typedef struct {
 }EPersona;
 
 /**
- * Obtiene el primer indice libre del array.
- * @param lista el array se pasa como parametro.
- * @return el primer indice disponible
- */
-int obtenerEspacioLibre(EPersona lista[]);
+* Ingresa nuevo usuario.
+* @param datos, el array se pasa como parametro.
+* @param int, recibe como entero a la cantidad de usuarios.
+* @return no devuelve nada. El usuario queda ingresado en los indices correspondientes.
+*/
+void altaDePersona(EPersona datos[], int);
 
 /**
- * Obtiene el indice que coincide con el dni pasado por parametro.
- * @param lista el array se pasa como parametro.
- * @param dni el dni a ser buscado en el array.
- * @return el indice en donde se encuentra el elemento que coincide con el parametro dni
- */
-int buscarPorDni(EPersona lista[], int dni);
-
-void altaDePersona(EPersona datos[], int);
+* Da la baja logica a un usuario.
+* @param datos, el array se pasa como parametro.
+* @param int, recibe como entero a la cantidad de usuarios.
+* @return no devuelve nada. El usuario queda borrado de manera logica asignandole un 0.
+*/
 void bajaDePersona(EPersona datos[], int);
+
+/**
+* Lista alfabeticamente a los usuarios.
+* @param datos, el array se pasa como parametro.
+* @param int, recibe como entero a la cantidad de usuarios.
+* @return no devuelve nada. Se ordenan los usuarios usando una variable auxiliar.
+*/
 void listarPersonas(EPersona datos[], int);
+
+/**
+* Realiza un codigo de barras segun las edades de los usuarios.
+* @param datos, el array se pasa como parametro.
+* @param int, recibe como entero a la cantidad de usuarios.
+* @return no devuelve nada. Se muestra el grafico por edades.
+*/
 void graficarPersonas(EPersona datos[], int);
